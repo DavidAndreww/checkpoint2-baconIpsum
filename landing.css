@@ -5,9 +5,11 @@
 }
 body {
   background: white;
+  font-family: 'Goudy Bookletter 1911', serif;
 }
 /*CSS below is initial landing animations*/
- /* .first-landing {
+/*
+  .first-landing {
   width: 100%;
   height: 100%;
   background-image: url(./Images/Homepage-Image.png);
@@ -52,7 +54,7 @@ body {
   background-color: white;
   height: 100%;
   width: 100%;
-}   */
+} */
 /* above is landing animation. below is header/nav. */
 
 header {
@@ -60,17 +62,60 @@ header {
   width: 100%;
   height: 125px;
   overflow: hidden;
+  padding: 0px 15px;
 }
 #mbc-logo {
   float: left;
   width: 20%;
   min-width: 303px;
+  margin-right: 25px;
 }
 nav {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  font-size: 25px;  
+}
+.links div {
+  background-image: linear-gradient(to right top, #025f2e, #08773b, #109049, #19aa57, #22c466);
+  width: 120px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  opacity: .85;
+  font-size: 15px;
+}
+.links div:hover {
+  text-decoration: none;
+  transform: scale(1.05);
+  box-shadow: 0 8px 6px -6px black;
+}
+.links div:active {
+  text-decoration: none;
+  transform: scale(1);
+  box-shadow: none;
+}
+.contactinfo {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  color: green;
+  font-weight: 900;
 }
 /*Above is header/nav, below is main content area*/
 .maincontent {
@@ -82,65 +127,119 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.maincontent section {
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  bottom: 70px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: 10px;
+}
 .maintext {
-  font-size: 2em;
+  font-size: 18px;
   text-align: center;
   color: rgb(255, 255, 255);
-  opacity: .85; 
+  font-weight: 200;
+  font-family: 'Aclonica', sans-serif;
 }
 #emphasis {
-  font-size: 5em;
+  font-size: 125px;
+  color: white;
+  font-weight: 200;
 }
-/*Above is main content area, below*/
+/*Above is main content area, below is the page break cells*/
 
 .page-break-boxes {
   background-color: white;
   width: 100%;
   height: 70px;
   position: relative;
-  color: black;
+  color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .page-break-boxes div {
   border: 1px solid black;
   height: 150px;
+  width: 350px;
   position: relative;
-  bottom: 80px;
-  border-radius: 20px;
-  background-color: #A9735B;
+  bottom: 40px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right top, #025f2e, #08773b, #109049, #19aa57, #22c466);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 15px;
 }
-.page-break-boxes div:nth-child(1) {
-  background-color: rgb(87, 87, 233);
+.page-break-boxes h3 {
+  font-family: 'Aclonica', sans-serif;
 }
-.page-break-boxes div:nth-child(2) {
-  background-color: rgb(36, 173, 173);
+.page-break-boxes div h3, p {
+  color: white;
+  opacity: .85;
 }
-.page-break-boxes div:nth-child(3) {
-  background-color: rgb(133, 228, 133);
+.page-break-boxes div a {
+  width: 125px;
+  font-size: 12px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
+.page-break-boxes div a:hover {
+  width: 120px;
+  border: 1px solid white;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: -2px;
+}
+.page-break-boxes div a:active {
+  width: 120px;
+  border: 1px solid white;
+  color: white;
+  padding: 8px;
+  border-radius: 50px;
+  transform: scale(.9);
+  outline: none;
+  cursor: pointer;
+}
+
 /*Above is positioned divs, below is footer*/
+footer {
+  background-color: white;
+}
 .footgrid {
   display: grid;
   grid-template-columns: 40% 25% auto;
   grid-template-rows: 20% auto;
+  margin: 100px 15px 0px 15px;
 }
 .border {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
-.manager {
+.managerpic {
   grid-column: 1/2;
   grid-row: 1/3;
   width: 75%;
   min-width: 329px;
-  margin: 56px 15% 56px 10%;
+  margin: 56px 15% 56px 0%;
+  border-radius: 5px;
 }
 .managertitle {
   grid-column: 2/3;
   grid-row: 1/2;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
   margin-bottom: 40px;
   position: relative;
@@ -149,23 +248,77 @@ nav {
 .managerinfo {
   grid-column: 2/3;
   grid-row: 2/3;
-  padding: 0% 10% 0% 10%;
+  padding: 0% 16% 0% 0%; 
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 300;
   text-align: justify;
   position: relative;
   left: -40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.managerinfo div{
+  height: 2px;
+  width: 100%;
+  background-color: brown;
+}
+.managerinfo p{
+  color: black;
 }
 form {
   grid-column: 3/4;
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
+  background-color: #C78F73;
+  padding: 2%;
+  border-top: 2px solid brown;
+  border-bottom: 2px solid brown;
+  border-radius: 5px;
+  max-height: 435px;
 }
 .formhead {
   text-align: center;
   margin-bottom: 24px;
 }
+.formhead span {
+  display: block;
+  font-size: 14px;
+}
+label {
+  font-weight: 900;
+}
 input {
   width: 200px;
+  margin-bottom: 16px;
+}
+.truefoot {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formbutton {
+  margin-top: 15px;
+  width: 80px;
+  padding: 3px;
+}
+.formbutton:hover {
+  margin-top: 15px;
+  width: 80px;
+  padding: 3px;
+  transform: scale(1.05);
+  box-shadow: 0 8px 6px -6px black;
+  cursor: pointer;
+}
+.formbutton:active {
+  margin-top: 15px;
+  width: 80px;
+  padding: 3px;
+  transform: scale(1);
+  box-shadow: none;
 }
