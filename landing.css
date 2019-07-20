@@ -144,7 +144,8 @@ li a:hover {
   text-align: center;
   color: rgb(255, 255, 255);
   font-weight: 200;
-  font-family: 'Aclonica', sans-serif;
+  font-family: 'Galdeano', sans-serif;
+
 }
 #emphasis {
   font-size: 125px;
@@ -177,7 +178,8 @@ li a:hover {
   padding: 0px 15px;
 }
 .page-break-boxes h3 {
-  font-family: 'Aclonica', sans-serif;
+  font-family: 'Galdeano', sans-serif;
+
 }
 .page-break-boxes div h3, p {
   color: white;
