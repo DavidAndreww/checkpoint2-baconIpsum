@@ -1,3 +1,4 @@
+/* Core Styles*/
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@
 body {
   background: var(--blue);
   font-family: 'Goudy Bookletter 1911', serif;
+  font-size: 1.2em;
 }
 :root {
 --blue: rgba(213, 231, 242, 1); 
@@ -14,8 +16,67 @@ body {
 --brown: rgba(115, 75, 61, 1); 
 --lightbrown: rgba(191, 132, 111, 1); 
 }
+h1, h2, h3 {
+  padding: 1em 0px;
+}
+p {
+  padding: 1em 0px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.button {
+  display: inline-block;
+  padding: .75em 1.75em;
+  border-radius: 50px;
+  background: none;
+  border: 1px solid white;
+  background: var(--lightgreen);
+  font-size: .75em;
+}
+.button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: black;
+}
+.button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 1px 0px;
+}
+.button:active {
+  transform: scale(1);
+  box-shadow: none;
+}
 
-/* Section B */
+/* End Core Styles / Start Section A */
+
+#section-a .contacts {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+#section-a .phone-email {
+  padding: 0px;
+  display: flex;
+}
+#section-a .phone-email p {
+  padding: 0px;
+}
+#section-a .social {
+  display: flex;
+}
+
+
+/* End Section A / Start Section B */
+
+#section-b {
+  min-height: 450px;
+  text-align: center;
+}
 #section-b .bg-image {
   position: absolute;
   background: url(/Images/outside.jpg);
@@ -24,6 +85,55 @@ body {
   background-position: center;
   width: 100%;
   height: 450px;
-  opacity: .5;
   z-index: -1;
+  opacity: .4;
+}
+#section-b .text-wrap {
+  padding: 0px 1em;
+}
+.text-wrap .button {
+  margin-top: 2em;
+}
+
+/* End Section B / Start Section C */
+
+#section-c {
+  background: var(--blue);
+  text-align: center;
+}
+#section-c .text-wrap {
+  padding: 0px 1em;
+}
+#section-c li {
+  padding: 1em 1em;
+}
+#section-c .card {
+  background: var(--lightbrown);
+}
+#section-c .card img {
+  border: 1px solid black;
+}
+#section-c .card-content {
+  padding: 1em 1em;
+  border: 1px solid black;
+}
+
+/* End Section C / Start Section D */
+
+#section-d {
+  padding: 1em;
+  text-align: center;
+}
+#section-d .text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#section-d .text-wrap h2 {
+  padding: 1em 0px 0px;
+}
+#section-d .text-wrap .horizontal-rule {
+  width: 100%;
+  height: 2px;
+  background: var(--brown);
 }
