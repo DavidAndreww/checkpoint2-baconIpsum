@@ -119,13 +119,23 @@ li a:hover {
 }
 /*Above is header/nav, below is main content area*/
 .maincontent {
-  background-image: url(./Images/outside.jpg);
-  background-position: center;
   width: 100%;
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.maincontent div:nth-child(1) {
+  background-image: url(./Images/outside.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  opacity: .5;
+
 }
 .maincontent section {
   height: 270px;
@@ -142,14 +152,14 @@ li a:hover {
 .maintext {
   font-size: 18px;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: black;
   font-weight: 200;
   font-family: 'Galdeano', sans-serif;
 
 }
 #emphasis {
   font-size: 125px;
-  color: white;
+  color: black;
   font-weight: 200;
 }
 /*Above is main content area, below is the page break cells*/
@@ -162,13 +172,13 @@ li a:hover {
   color: white;
   display: flex;
   justify-content: space-around;
+  margin-top: 15px;
 }
 .page-break-boxes div {
   border: 1px solid black;
   height: 150px;
   width: 350px;
   position: relative;
-  bottom: 40px;
   border-radius: 5px;
   background-image: linear-gradient(to right top, #025f2e, #08773b, #109049, #19aa57, #22c466);
   display: flex;
