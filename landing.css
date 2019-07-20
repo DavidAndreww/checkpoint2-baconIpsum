@@ -7,6 +7,13 @@ body {
   background: white;
   font-family: 'Goudy Bookletter 1911', serif;
 }
+:root {
+--blue: rgba(213, 231, 242, 1); 
+--green: rgba(111, 140, 81, 1); 
+--lightgreen: rgba(191, 184, 174, 1); 
+--brown: rgba(115, 75, 61, 1); 
+--lightbrown: rgba(191, 132, 111, 1); 
+}
 /*CSS below is initial landing animations*/
 /*
   .first-landing {
