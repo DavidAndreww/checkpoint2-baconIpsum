@@ -35,6 +35,7 @@ img {
   border: 1px solid white;
   background: var(--lightgreen);
   font-size: .75em;
+  text-align: center;
 }
 .button a {
   text-decoration: none;
@@ -92,7 +93,6 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-size: .75em;
-  font-weight: 900;
   margin: 1em 0px;
   border: 1px solid var(--brown);
   padding: .5em;
@@ -146,7 +146,7 @@ img {
   padding: 1em 1em;
 }
 #section-c .card {
-  background: var(--lightbrown);
+  background: var(--lightgreen);
 }
 #section-c .card img {
   border: 1px solid black;
