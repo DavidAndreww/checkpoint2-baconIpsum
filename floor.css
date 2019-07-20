@@ -13,14 +13,14 @@ img {
   display: block;
 }
 header {
-  height: 20%;
+  height: 75px;
 }
 .backbutton {
   color: white;
   font-size: 40px;
   position: absolute;
   top: 15px;
-  left: 50vw;
+  left: 49vw;
 }
 a:visited {
   color: white;
@@ -31,7 +31,6 @@ a:active {
 main {
   float: left;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -51,18 +50,27 @@ h3 {
 section {
   height: 100%;
   background-color: white;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 10px;
 }
-.border {
+.border1 {
+  background-color: rgb(6, 100, 6);
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.border2 {
   background-color: rgb(6, 100, 6);
   width: 100%;
   height: 5px;
 }
-footer {
-  height: 45%;
+
+@media (max-width: 1240px) {
+  main {
+    flex-direction: column;
+  }
 }
-
-

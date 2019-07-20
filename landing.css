@@ -324,3 +324,11 @@ input {
   transform: scale(1);
   box-shadow: none;
 }
+
+@media (max-width: 768px){
+  
+}
+
+@media (max-width: 576px){
+
+}
