@@ -87,9 +87,6 @@ button:active {
   transform: translateY(0px);
   outline: none;
 }
-.border {
-  border: 2px solid red;
-}
 
 @media (min-width: 768px) {
   #section-a .section-wrap .text-wrap,
@@ -97,6 +94,7 @@ button:active {
     background: white;
     width: auto;
     height: 246px;
+    width: 380px;
     padding: 1em;
     font-size: 14px;
   }
