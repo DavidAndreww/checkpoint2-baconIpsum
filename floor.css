@@ -6,8 +6,15 @@
 }
 body {
   padding: 0px 1%;
-  background-color: #5E9862;
+  background-color: var(--green);
 }
+:root {
+  --blue: rgba(213, 231, 242, 1); 
+  --green: rgba(111, 140, 81, 1); 
+  --lightgreen: rgba(191, 184, 174, 1); 
+  --brown: rgba(115, 75, 61, 1); 
+  --lightbrown: rgba(191, 132, 111, 1); 
+  }
 img {
   width: 385px;
   display: block;

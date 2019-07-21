@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: justify;
 }
 body {
   background: var(--blue);
@@ -22,6 +21,7 @@ h1, h2, h3 {
 }
 p {
   padding: 1em 0px;
+  text-align: justify;
 }
 img {
   display: block;
@@ -54,7 +54,6 @@ img {
 }
 
 /* End Core Styles / Start Section A */
-.mbc-logo {}
 
 #section-a .contacts {
   width: 100%;
@@ -142,6 +141,9 @@ img {
 }
 #section-c .text-wrap {
   padding: 0px 1em;
+}
+#section-c .text-wrap p {
+  text-align: center;
 }
 #section-c li {
   padding: 1em 1em;
