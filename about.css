@@ -8,9 +8,12 @@
 }
 body {
   background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header {
-  height: 75px;
+  height: 80px;
 }
 .backbutton {
   color: white;
@@ -44,9 +47,85 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
+    background: var(--lightgreen)
+  }
+  #section-a .section-wrap .text-wrap,
+  #section-b .section-wrap .text-wrap {
+    background: white;
+    width: 100%;
   }
   ul {
     list-style: none;
+    margin-bottom: 1em;
   }
+  .header-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+  }
+.horz-rule {
+  height: 2px;
+  width: 50%;
+  background: var(--brown)
+}
+button {
+  background-color: var(--blue);
+  border: 1px solid white;
+  margin-bottom: 1em;
+  padding: 1em 1.6em;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 1px 0px;
+}
+button:active {
+  box-shadow: none;
+  transform: translateY(0px);
+  outline: none;
+}
+.border {
+  border: 2px solid red;
+}
 
-
+@media (min-width: 768px) {
+  #section-a .section-wrap .text-wrap,
+  #section-b .section-wrap .text-wrap {
+    background: white;
+    width: auto;
+    height: 246px;
+    padding: 1em;
+    font-size: 14px;
+  }
+  #section-a .section-wrap {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #section-b .section-wrap {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  img {
+    width: 366px;
+    max-width: 410px;
+    padding: 1em;
+  }
+}
+@media (min-width: 1005px) {
+  #section-a,
+  #section-b {
+    width: 1000px;
+  }
+}
+@media (min-width: 1400px) {
+  img {
+    width: 482px;
+  }
+  #section-a .section-wrap .text-wrap, 
+  #section-b .section-wrap .text-wrap{
+    width: 410px;
+  }
+}
