@@ -166,7 +166,7 @@ img {
 }
 #section-b .bg-image {
   position: absolute;
-  background: url(/Images/outside.jpg);
+  background: url(./Images/outside.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
