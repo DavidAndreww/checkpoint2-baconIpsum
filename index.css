@@ -41,7 +41,7 @@
   bottom: 25px;
 }
 .wrapper {
-  animation-delay: 5s;
+  animation-delay: 4s;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -177,6 +177,9 @@ img {
 }
 #section-b .text-wrap {
   padding: 0px 1em;
+}
+#section-b .text-wrap h1 {
+  font-size: 3em;
 }
 .text-wrap .button {
   margin-top: 2em;
