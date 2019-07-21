@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Cabin', sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
+body {
+  background-color: var(--blue);
 }
 header {
   height: 75px;
@@ -20,3 +25,28 @@ a:visited {
 a:active {
   color: white;
 }
+:root {
+  --blue: rgba(213, 231, 242, 1); 
+  --green: rgba(111, 140, 81, 1); 
+  --lightgreen: rgba(191, 184, 174, 1); 
+  --brown: rgba(115, 75, 61, 1); 
+  --lightbrown: rgba(191, 132, 111, 1); 
+  }
+  img {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+  }
+  #section-a .section-wrap,
+  #section-b .section-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    list-style: none;
+  }
+
+
