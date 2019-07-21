@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: justify;
 }
 body {
   background: var(--blue);
@@ -331,6 +332,9 @@ img {
   #section-c ul li {
     width: 350px;
     min-width: 250px;
+  }
+  #section-c img {
+    width: 100%;
   }
 
 /*End Section C / Start Section D*/
